@@ -1,33 +1,39 @@
-.footer{
+.footer {
     background: #002529;
     padding: 48px 0 48px 0;
-    &__wrapper{
+
+    &__wrapper {
         display: flex;
     }
-    &__content{
+
+    &__content {
         display: flex;
         gap: 125px;
         width: 50%;
         flex: 1;
     }
-    &__collection{
+
+    &__collection {
         display: flex;
         gap: 40px;
     }
-    &__item{
+
+    &__item {
         font-size: 18px;
         color: #ffffff;
         font-weight: 400;
         margin-top: 22px;
     }
-    .collection{
+
+    .collection {
         line-height: 2;
         color: #ffffff8c;
         font-weight: 400;
         cursor: pointer;
     }
-    &__box{
-        p{
+
+    &__box {
+        p {
             font-size: 16px;
             margin-top: 30px;
             color: #ffffffab;
@@ -35,68 +41,77 @@
             font-weight: 200;
         }
     }
-    &__icon{
+
+    &__icon {
         display: flex;
         align-items: end;
         justify-content: end;
         gap: 8px;
-        i{
+
+        i {
             color: #ffffff;
             margin-bottom: 51px;
         }
     }
 }
+
 @media (max-width:850px) {
-    .footer{
-        &__wrapper{
+    .footer {
+        &__wrapper {
             display: flex;
             width: 100%;
             flex-direction: column;
         }
-        &__content{
+
+        &__content {
             width: 100%;
             display: flex;
             justify-content: space-between;
 
         }
-        &__box{
-            p{
+
+        &__box {
+            p {
                 display: flex;
                 justify-content: end;
                 margin-top: 0;
             }
         }
-        &__icon{
+
+        &__icon {
             display: flex;
             align-items: start;
             justify-content: start;
-            i{
+
+            i {
                 margin-bottom: 0;
             }
         }
-        
+
     }
-    
+
 }
 
 
 @media (max-width:500px) {
-    .footer{
-        .item{
+    .footer {
+        .item {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
         }
-        &__content{
+
+        &__content {
             display: flex;
             flex-direction: column;
             gap: 15px;
             align-items: center;
             justify-content: center;
         }
-        &__box{
-            p{
+
+        &__box {
+            p {
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -104,12 +119,13 @@
                 margin-top: 10px
             }
         }
-        &__icon{
+
+        &__icon {
             display: flex;
             gap: 10px;
             justify-content: center;
             margin-top: 15px;
         }
     }
-    
+
 }

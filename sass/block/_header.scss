@@ -66,6 +66,7 @@
             flex-direction: column;
             padding: 30px;
             transition: .5s;
+            z-index: 11;
 
             button {
                 padding: 9px 24px;
@@ -88,6 +89,9 @@
     .navbar {
         &__collection {
             width: 60%;
+        }
+        .activ {
+            flex: none;
         }
     }
 
