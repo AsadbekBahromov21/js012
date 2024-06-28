@@ -1,35 +1,49 @@
-.header{
+.header {
     width: 100%;
     background: #014E56;
     padding-top: 77px;
     padding-bottom: 129px;
 }
-.navbar{
+
+.navbar {
     display: flex;
     gap: 80.5px;
     align-items: center;
+
     // border: 1px solid red;
-    &__collection{
+    &__collection {
         display: flex;
         gap: 40px;
         align-items: center;
         flex: 1;
-        button{
+
+        button {
             @include button();
             color: #fff;
             font-weight: 300;
             cursor: pointer;
+
+            &:hover {
+                background: #0000009c;
+            }
         }
     }
-    .show{
+
+    .activ {
+        flex: 1;
+    }
+
+    .show {
         left: 0;
     }
-    &__item{
+
+    &__item {
         color: #fff;
         font-weight: 300;
         font-size: 18px;
     }
-    &__menu{
+
+    &__menu {
         color: #fff;
         padding-right: 5px;
         display: none;
@@ -37,10 +51,11 @@
 }
 
 @media (max-width:800px) {
-    .navbar{
+    .navbar {
         display: flex;
         justify-content: space-between;
-        &__collection{
+
+        &__collection {
             position: fixed;
             top: 0;
             left: -350px;
@@ -51,22 +66,29 @@
             flex-direction: column;
             padding: 30px;
             transition: .5s;
-            button{
+
+            button {
                 padding: 9px 24px;
                 font-size: 13px;
             }
         }
-        &__menu{
+
+        .activ {
+            flex: none;
+        }
+
+        &__menu {
             display: block;
         }
     }
-    
+
 }
+
 @media (max-width:450px) {
-    .navbar{
-        &__collection{
+    .navbar {
+        &__collection {
             width: 60%;
         }
     }
-    
+
 }
