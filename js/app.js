@@ -7,3 +7,4 @@ const navbar__btr = document.querySelector("button")
 function togglepow (){
     navbar__btr.classList.toggle("pow")
 }
+// masalalar
